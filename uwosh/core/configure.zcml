@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+	xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.core">
+
+	<browser:page
+        name="uwosh_tools"
+        for="*"
+        permission="zope2.View"
+        class=".tools.UWOshTools"
+        allowed_interface=".interfaces.IUWOshTools"
+        />
+	   <!-- We need to make the request annotatable for this to work -->
+
+	    <class class="ZPublisher.BaseRequest.BaseRequest">
+	        <implements interface="zope.annotation.interfaces.IAttributeAnnotatable" />
+	    </class>
+</configure>

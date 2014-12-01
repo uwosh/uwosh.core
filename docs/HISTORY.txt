@@ -1,0 +1,37 @@
+Changelog
+=========
+
+1.1.1
+-----
+
+* Changed .get() calls to .getProperty() to work with new Plone security patch
+
+
+1.1
+---
+
+* changed get_help_url to look for uwosh_help_url property to match
+  how personal_bar portal_action works
+
+* version bump to indicate working with Plone 4.0.1
+
+
+0.3.7
+-----
+
+* added get_help_url to UWOshTools; looks for 'help_url' property
+  containing the URL for getting help with the site
+
+
+0.3.6b2
+-------
+
+* fixed DateTime.now() declarations when it should just be DateTime()
+  for new versions of DateTime
+
+
+0.1 - Unreleased
+----------------
+
+* Initial release
+
